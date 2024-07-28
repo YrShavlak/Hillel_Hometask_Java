@@ -8,15 +8,13 @@ public class Home_Task_5 {
     }
 
     public static String calculateSumUpToN(int N) {
-        if (N <= 0) return "Хибні вхідні параметри";
-        StringBuilder result = new StringBuilder();
+        if (N < 1) return "Хибні вхідні параметри";
+
+        int sum = 0;
         for (int i = 1; i <= N; i++) {
-            result.append(i);
-            if (i < N) {
-                result.append(" ");
-            }
+            sum += i;
         }
-        return result.toString();
+        return String.valueOf(sum);
     }
 
     public static String getGrade(int grade) {
