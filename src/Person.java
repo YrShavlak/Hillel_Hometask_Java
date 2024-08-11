@@ -29,10 +29,6 @@ public class Person {
         return profession;
     }
 
-    public void setProfession(String profession){
-        this.profession = profession;
-    }
-
     public void changeProfession(String newProfession){
         this.profession = newProfession;
     }
